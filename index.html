@@ -1,1 +1,237 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brokl's Personal Website</title>
+
+    <!-- Fonts from Google Fonts - more at https://fonts.google.com -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  
+  <body>
+  
+    <div class="home">  
+      <!--block of name-->
+      <div class="name-block">
+        
+        <div class="name-block-container">
+          <h1>BROKL LIU</h1>
+          <h3>developer<br> +<br> software QA engineer</h3>
+          <br><br><br><br><br><br><br>
+          <h1><span>Let's make something incredible together</span></h1>
+        </div>
+      </div>
+    
+      <!--block of menu list-->
+      <div class="menu-block">
+        
+        <div class="menu-block-item-about">
+          <div class="menu-block-item-about-container">
+            <h2 class="item-title" id="about">About</h2>
+          </div>
+        </div>
+
+        <div class="menu-block-item-portfolio">
+          <div class="menu-block-item-portfolio-container">
+            <h2 class="item-title" id="portfolio">Portfolio</h2>
+          </div>
+        </div>
+
+        <div class="menu-block-item-contact">
+          <div class="menu-block-item-contact-container">
+            <h2 class="item-title" id="contact">Contact</h2>
+          </div>
+        </div>
+
+        <div class="menu-block-item-experience">
+          <div class="menu-block-item-experience-container">
+            <h2 class="item-title" id="experience">Experience</h2>
+          </div>
+        </div>
+
+      </div>
+      <!--block of menu list //end-->      
+      
+      <div class="footer">
+          <p>Copyright © 2018 FanChi (Brokl) Liu</p>
+      </div>
+
+      <!--content of About-->
+      <div class="modal" id="modal-about">
+        <span class="close"> &times; </span>
+        <div class="modal-content">
+            <h1>Closer To Me</h1>
+            <p>Work as a QA Engineer and QA Automation developer for over 7 years.  
+              Enjoy learning new technologies and exploring something challenging.  
+              Has a wide range of project experience, including web application and mobile development.</p>
+        </div>  
+      </div>
+
+      <!--content of Portfolio-->
+      <div class="modal" id="modal-portfolio">
+        <span class="close"> &times; </span>
+        <div class="modal-content">
+            <h1>What I've Done So Far</h1>
+
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="http://broklliu.ddns.net/event/index.html">
+                    <img src="images/project_event_recommend.jpg" alt="Events Recommendation" width="600" height="400">
+                  </a>
+                  <div class="desc">
+                    <h4>Events Recommendation</h4>
+                    <p>It is a personalized event recommended web page. You can easily find and order
+                      tickets around. After hitting any event you are interested in, you would be redirected 
+                      to ticketmaster.com to complete the order later.    
+                    </p>
+                    <div class="desc-tag">Tech Stack</div>
+                    <p>HTML, CSS, JavaScript, AJAX, RESTful API, Java Servlet, MySQL, 
+                      JUnit, Apache JMeter, Amazon EC2
+                    </p>
+                  </div>
+                </div>
+              </div>
+                      
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="https://github.com/flagcamp-pegasus/TravelPlanner">
+                    <img src="images/project_travel_planner.jpg" alt="Travel Planner" width="600" height="400">
+                  </a>
+                  <div class="desc">
+                    <h4>Travel Planner</h4>
+                    <p>This app provides an visualization panel for travelers to friendly create a 
+                      day-by-day itineray. If you have no idea about the attractions' priorities, it
+                      recommend the best route to minimize your travel time.   
+                    </p>
+                    <div class="desc-tag">Tech Stack</div>
+                    <p>ReactJS, Google Maps API, NPM, Java, MongoDB
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="#">
+                    <img src="images/project_android.jpg" alt="Traffic Assistant" width="600" height="400">
+                  </a>
+                  <div class="desc">
+                    <h4>Traffic Assistant</h4>
+                    <p>This Location-Based Service Android app allows users to post and receive nearby traffic alerts,
+                      including polices, speed limit, construction and much more. Smart drive, happy hour.
+                    </p>
+                    <div class="desc-tag">Tech Stack</div>
+                    <p>Java, Android, LBS, Google Firebase Services, Google Maps API 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="http://react-nba-web.s3.us-east-2.amazonaws.com/index.html">
+                    <img src="images/project_react_d3.jpg" alt="Data Visualization" width="600" height="400">
+                  </a>
+                  <div class="desc">
+                      <h4>React frontend web app for data visualization</h4>
+                      <p>This frontend web app focuses on visualizing a NBA player's shot information.  
+                        You can easily interact with any NBA player's shot data through the dashborad.
+                      </p>
+                      <div class="desc-tag">Tech Stack</div>
+                      <p>ReactJS, Ant Design, D3, NPM, Amazon S3  
+                      </p>
+                  </div>
+                </div>
+              </div>
+
+        </div>  
+      </div>
+
+      <!--content of Contact-->
+      <div class="modal" id="modal-contact">
+          <span class="close"> &times; </span>
+          <div class="modal-content">
+              <h1>Let's Get In Touch</h1>
+              <div class="contact-content">
+                  <nav>
+                    <a href="https://www.linkedin.com/in/broklliu/" target="_blank">
+                      <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://www.facebook.com/broklliu.1982" target="_blank">
+                      <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                  </nav>
+              </div>
+          </div>  
+        </div>
+
+      <!--content of Experience-->
+      <div class="modal" id="modal-experience">
+          <span class="close"> &times; </span>
+          <div class="modal-content">
+              <h1>Working Experience</h1>
+
+            <div class="exp-row">
+              <div class="col-content">
+                <h4>
+                  <a target="_blank" href="https://www.mentor.com/">Mentor Graphics</a>, Mar. 2015 - Sep. 2016
+                </h4>
+                <p><strong>Technical Marketing Engineer</strong></p>
+                <p>Gathered and analyed business requirements from customers and cross-functional teams, prioritized
+                  the feature gaps and created software specifications. Conveyed the values and benefits of products
+                  to international customers.  
+                </p>
+              </div>
+            </div>
+            
+            <div class="exp-row">
+              <div>
+                <h4>
+                  <a target="_blank" href="https://www.synopsys.com/">Synopsys</a>, Nov. 2006 - Jan. 2014
+                </h4>
+                <p><Strong>Senior Software Quality Assurance Engineer</Strong></p>
+                <p>Developed test plans, test cases, automation apps and executed various testing strategies
+                  to ensure high-quality software throughout SDLC and STLC. Detected and reported software defects
+                  through bug tracking systems.
+                </p>
+              </div>
+            </div>
+            
+            <div class="exp-row">
+              <div>
+                <h4>
+                  <a target="_blank" href="http://www.mustek.com.tw/">Mustek Systems</a>, Aug. 2004 - Mar. 2006
+                </h4>
+                <p><Strong>Software Development Engineer</Strong></p>
+                <p>
+                  Developed and executed automation test programs to ensure high-quality of products delivering. Designed
+                  image processing features to enhance hardware functionalities.
+                </p>
+              </div> 
+            </div>   
+
+            <div class="exp-row">
+              <div>
+                <h4>
+                  <a target="_blank" href="https://www.zyxel.com/">ZyXEL</a>, Jan. 2004 - Jun. 2004
+                </h4>
+                <p><Strong>Information Technology Engineer</Strong></p>
+                <p>Assembled and analyzed issues from more than 500 customers, interacted with system engineers to
+                  strengthen internal systems and processes such as network monitoring and information security systems.
+                </p>
+              </div>  
+            </div>  
+
+          </div>  
+        </div>
+    </div>   
+
+    <script src="js/modal.js"></script>
+        
+  </body>
+</html>

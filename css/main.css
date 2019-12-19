@@ -1,0 +1,443 @@
+/* https://www.rgbtohex.net/hextorgb/ HEX to RGB converter */
+/* ---------------------------
+GENERAL
+----------------------------*/
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+.lite {
+  opacity: 0.3;
+}
+
+.footer {
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  font-size: 12px;
+  color: #bbbbbb ;
+}
+/* -------------------------
+HOME CONTAINER
+------------------------- */
+.home {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  background: #333333 url(../images/bg.jpg) 30% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  background-blend-mode: lighten;
+}
+/* -------------------------
+NAME BLOCK
+------------------------- */
+.name-block {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  border: 1px dashed rgba(255,255,255,0.4);
+  display: table;
+  
+  transition: all 0.5s; 
+  
+  -ms-transform: rotate(54deg);
+  -webkit-transform: rotate(54deg);
+  transform: rotate(54deg);  
+  left: -100px;
+  top: 10px;   
+}
+/**
+.name-block.reverse {
+  position: absolute;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  width: 30%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: none;
+  display: table;
+}
+*/
+.name-block-container {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 140px;
+  
+  /*  -ms-transform: rotate(-54deg);*/
+  /*  -webkit-transform: rotate(-54deg);*/
+  transform: rotate(-54deg);
+  
+}
+/**
+.name-block-container.reverse {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+
+  padding: 0 30px;
+}
+*/
+
+.name-block-container h1,
+.name-block-container h3 {
+  font-weight: 700;
+  font-size: 48px;
+  color: #FFF;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.name-block-container h1 span {
+  font-size: 28px;
+  font-weight: 300;
+  display: block;
+  text-transform: capitalize;
+  font-family: adobe-garamond-pro;
+  font-style: italic;
+}
+.name-block-container h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-style: italic;
+
+  animation-name: fade;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+}
+
+/* -------------------------
+MENU BLOCK
+------------------------- */
+.menu-block {
+  transition: all 0.5s;
+}
+
+/* -------------------------
+MENU BLOCK ITEM BLOCK
+------------------------- */
+/* 1. About */
+.menu-block-item-about {
+  position: absolute;
+  width: 430px;
+  height: 300px;
+  border: 1px solid rgba(255,255,255,0.4);
+  display: table;
+  
+  /*  -ms-transform: rotate(34deg);*/
+  /*  -webkit-transform: rotate(34deg);*/
+  transform: rotate(54deg);
+  left: 440px;
+  top: -100px;
+}
+.menu-block-item-about:hover {
+  transform: rotate(66deg) scale(1.2);
+  background-color: rgba(85,85,85,0.4);
+  z-index: 2;
+}
+.menu-block-item-about-container {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 120px 0 0 170px; 
+  /* text-align: center; */
+
+/*  -ms-transform: rotate(-54deg);*/
+/*  -webkit-transform: rotate(-54deg);*/
+  transform: rotate(-54deg);
+}
+.menu-block-item-about-container:hover {
+  transform: rotate(-66deg) scale(1.2);
+  color: #FFF;
+}
+
+/* 2. Portfolio */
+.menu-block-item-portfolio {
+  position: absolute;
+  width: 330px;
+  height: 300px;
+  border: 1px solid rgba(255,255,255,0.4);
+  display: table;
+
+  /*  -ms-transform: rotate(34deg);*/
+  /*  -webkit-transform: rotate(34deg);*/
+  transform: rotate(54deg);
+  left: 716px;
+  top: 210px;
+}
+.menu-block-item-portfolio:hover {
+  transform: rotate(66deg) scale(1.2);
+  background-color: rgba(85,85,85,0.4);
+  z-index: 2;
+}
+.menu-block-item-portfolio-container {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 30px 0px 0px 60px; 
+
+  /*  -ms-transform: rotate(-54deg);*/
+  /*  -webkit-transform: rotate(-54deg);*/
+  transform: rotate(-54deg);
+}
+.menu-block-item-portfolio-container:hover {
+  transform: rotate(-66deg) scale(1.2);
+  color: #FFF;
+}
+
+/* 3. Contact */
+.menu-block-item-contact {
+  position: absolute;
+  width: 230px;
+  height: 300px;
+  border: 1px solid rgba(255,255,255,0.4);
+  display: table;
+  
+  /*  -ms-transform: rotate(34deg);*/
+  /*  -webkit-transform: rotate(34deg);*/
+  transform: rotate(54deg);
+  left: 933px;
+  top: 440px;
+}
+.menu-block-item-contact:hover {
+  transform: rotate(66deg) scale(1.2);
+  background-color: rgba(85,85,85,0.4);
+  z-index: 2;
+}
+.menu-block-item-contact-container {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 40px 0 0 70px; 
+  
+/*  -ms-transform: rotate(-54deg);*/
+/*  -webkit-transform: rotate(-54deg);*/
+  transform: rotate(-54deg);
+}
+.menu-block-item-contact-container:hover {
+  transform: rotate(-66deg) scale(1.2);
+  color: #FFF;
+}
+
+/* 4. Experience */
+.menu-block-item-experience {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border: 1px solid rgba(255,255,255,0.4);
+  display: table;
+  
+  /*  -ms-transform: rotate(34deg);*/
+  /*  -webkit-transform: rotate(34deg);*/
+  transform: rotate(54deg);
+  left: 1025px;
+  top: 30px;
+}
+.menu-block-item-experience:hover {
+  transform: rotate(66deg) scale(1.2);
+  background-color: rgba(85,85,85,0.4);
+  z-index: 2;
+}
+.menu-block-item-experience-container {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 150px 0 130px 70px; 
+  
+/*  -ms-transform: rotate(-54deg);*/
+/*  -webkit-transform: rotate(-54deg);*/
+  transform: rotate(-54deg);
+}
+.menu-block-item-experience-container:hover {
+  transform: rotate(-66deg) scale(1.2);
+  color: #FFF;
+}
+.item-title {
+  width: 30%;
+  border: 1px;
+  border-bottom-style: solid;
+}
+.item-title:hover {
+  cursor: zoom-in;
+  border-bottom-color: red ;
+
+  animation-name: progress;
+  animation-duration: 1.5s;
+}
+
+/* -------------------------
+MODAL CLOCK FOR CONTENT
+--------------------- */
+/* 1. The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  padding-top: 50px; /* Location of the block */
+  right: 0;
+  top: 0;
+  width: 70%;
+  height: 100%;
+}
+
+/* 2. Modal Content */
+.modal-content {
+  /* margin: auto; */
+  display: block;
+  width: 90%;
+  height: 90%;
+  padding: 0px 20px 0px 20px;
+  overflow-y: scroll; /* Enable y-scroll */
+  background-color: rgba(255, 255, 255, 0.9); /* white w/ opacity */
+
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+.modal-content h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-shadow: 4px 4px 4px #aaaaaa;
+  color: #3377cc;
+}
+.modal-content p {
+  font-family: Roboto, Helvetica, sans-serif;
+  color: #555555;
+}
+
+/* 3. The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  color: #f1f1f1;
+  font-size: 24px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* -------------------------
+ANIMATION
+------------------------- */
+@keyframes fade {
+  from {color: #333;}
+  to {color: #FFF;}
+}
+@keyframes zoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+@keyframes progress {
+  from {width: 0%; border-bottom-color: white;}
+  to {width: 30%; border-bottom-color: red;}
+}
+
+/* -------------------------
+PORFOLIO CONTENT
+------------------------- */
+div.gallery {
+  box-shadow: 5px 5px 8px #bbbbbb;
+  transition: transform 0.2s;
+  opacity: 0.6;
+}
+
+div.gallery:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 12px;
+  text-align: left;
+}
+
+div.desc-tag {
+  width: fit-content;
+  text-shadow: 1px 1px 2px #aaaaaa;
+}
+
+.responsive {
+  float: left;
+
+  padding: 5px 10px; 
+  width: 50%;
+  height: 35em;
+  margin: 6px 0px;
+
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+/* -------------------------
+CONTACT CONTENT
+------------------------- */
+.contact-content {
+  display: table;
+  width: 100%;
+}
+
+.contact-content nav {
+  display: flex;
+}
+
+.contact-content nav a {
+  margin-right: 1em;
+}
+
+/* -------------------------
+EXPERIENCE CONTENT
+------------------------- */
+.exp-row {
+  width: 95%;
+  box-shadow: 5px 5px 8px #bbbbbb;
+  padding: 5px;
+  margin: 8px;
+}
+
+/* -------------------------
+ICONS
+------------------------- */
+.fa-linkedin {
+  color: #0077b5;
+  opacity: 0.4;
+}
+
+.fa-linkedin:hover {
+  color: #0077b5;
+  opacity: 1.0;
+}
+
+.fa-facebook {
+  color: #4267b2;
+  opacity: 0.4;
+}
+
+.fa-facebook:hover {
+  color: #4267b2;
+  opacity: 1.0;
+}
